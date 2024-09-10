@@ -21,7 +21,9 @@ ggplot(attacks_per_year, aes(x = iyear, y = n)) +
   labs(title = "Number of Terrorist Attacks Per Year",
        x = "Year", y = "Number of Attacks") +
   theme_minimal()
+#test with data above 
 
 
+#Group and prepare data by attack type.
 attack_type <- gtd_data %>%
   attacktype1_txt
