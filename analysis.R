@@ -23,7 +23,13 @@ ggplot(attacks_per_year, aes(x = iyear, y = n)) +
   theme_minimal()
 #test with data above 
 
+##Role 1 : Antonio 
+#Group the data by attack type
+attack_type_counts <- gtd_data %>%#need the count of the types of attacks
+  group_by(attacktype1, attacktype1_txt)  #group by attack type number classification and description
 
-#Group and prepare data by attack type.
-attack_type <- gtd_data %>%
-  attacktype1_txt
+
+# View the grouped and prepped data
+print(attack_type_counts)
+
+
