@@ -5,7 +5,7 @@ library(dplyr)
 library(ggplot2)
 
 # Load the dataset
-gtd_data <- read.csv("/Users/vishalbhashyaam/Documents/GitHub/DS-public-interests/INFO_536_CollaborativeExercise/globalterrorismdb_0718dist.csv", 
+gtd_data <- read.csv("globalterrorismdb_0718dist.csv", 
                      stringsAsFactors = FALSE)
 
 
@@ -13,9 +13,4 @@ gtd_data <- read.csv("/Users/vishalbhashyaam/Documents/GitHub/DS-public-interest
 glimpse(gtd_data)
 
 
-# Work: Group 3 - Vishal Bhashyaam
-# Role 2 - Count the number of each attack type 
-attack_type_count <- gtd_data %>% 
-  count(attacktype1_txt) 
 
-print (attack_type_count)
