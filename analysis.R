@@ -1,6 +1,6 @@
 # Global Terrorism Database Collaborative Analysis
 
-# Load necessary libraries
+##### Load necessary libraries
 library(dplyr)
 library(ggplot2)
 
