@@ -36,14 +36,11 @@ print (attack_type_counts) # printing attack types
 #########################################################
 # Role 3 : Kendall (Visualize the most common attack types using a bar chart.)
 
-test_tibble <- count(attack_type_counts)
-test_tibble  
-test_tibble %>%
+gtd_data %>% 
   ggplot(aes(x = attacktype1_txt)) +
+  labs(x = "\nAttack Type",
+       y = "Count") +
   geom_bar() +
-  labs(title = "Most Common Attack Types")
-
-attack_type_counts %>% 
-  ggplot(aes(x = n, fill = attacktype1_txt)) +
-  geom_bar() +
-  labs(title = "Most Common Attack Types")
+  labs(title = "Most Common Attack Types") +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1))
+        
