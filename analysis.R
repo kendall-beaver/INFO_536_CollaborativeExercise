@@ -28,8 +28,10 @@ print(attack_type_counts) # attack type ranges from 1-9
 #########################################################
 # Role 2 Vishal Bhashyaam (Count the number of each attack type.)
 
-attack_type_counts <- gtd_data %>% 
-  count(attacktype1_txt) # use count inbuilt function to get the count fo attack types
+# attack_type_counts_test <- gtd_data %>% 
+#   count(attacktype1_txt) # This is a test to ensure that it matches Antonio's analysis, and it does.
+
+count(attack_type_counts)
 
 print(attack_type_counts) # printing attack types
 
