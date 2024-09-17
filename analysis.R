@@ -31,7 +31,7 @@ print(attack_type_counts) # attack type ranges from 1-9
 attack_type_counts <- gtd_data %>% 
   count(attacktype1_txt) # use count inbuilt function to get the count fo attack types
 
-print (attack_type_counts) # printing attack types
+print(attack_type_counts) # printing attack types
 
 #########################################################
 # Role 3 : Kendall (Visualize the most common attack types using a bar chart.)
